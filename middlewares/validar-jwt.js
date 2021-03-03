@@ -8,7 +8,7 @@ const validarJWT = async (req, res = response, next) => {
 
     if ( !token ) {
         return res.status(401).json({
-            msg:"No tienes permiso"
+            msg:"No tienes permiso - no hay token en la petición"
         });
     }
 
